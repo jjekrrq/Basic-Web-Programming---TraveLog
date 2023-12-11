@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="travel" content="연남동, initial-scale=1.0">
+    <title>연남동</title>
+    <style>
+        @import url(../css/phoneBaseStyle.css);
+    </style>
+</head>
+<body>
+    <h3><span id="h3center">연남동</span></h3>
+        <div id="box1">
+            <table>
+                <caption><strong id="tablecaption"></strong></caption>
+                <tbody>
+                    <tr>
+                        <td><img src="../media/yeonnam.webp" width="430px" height="450px" id="imgplace"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr id="phonehinge">
+            <form>
+                <input id="btn1" type="button" name="home" onclick="goHome(this)">
+            </form>
+            <div id="btn2" style="display: inline-block;" onclick="goNext()"></div>
+            <div id="btn3" style="display: inline-block;" onclick="goBefore()"></div>
+            <script>
+                function goHome(obj){
+                    alert("홈으로 갑니다.")
+                    window.location.href = "../main.html"
+                }
+                function goNext(){
+                    window.location.href = "../link/osaka.html";
+                }
+                function goBefore(){
+                    window.location.href = "../link/cheonan.html";
+                }
+            </script>
+        </div>
+        <div id="info">
+            <table id="info-table">
+                <tbody>
+                    <tr><td>이름 : 하나킨</td></tr>
+                    <tr><td>위치 : 서울 마포구 동교로32길 8 1층</td></tr>
+                    <tr><td>평점 : ⭐⭐⭐</td></tr>
+                    <tr><td>이유 : 잘 모르겠다. 인상 깊지 않다.</td></tr>
+                    <tr><td>아쉬운 점: 양이 좀 적은 것 같기도...</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="left_info">
+            <table id="info-table">
+                <tbody>
+                    <tr><td>이름 : 33YUKON(BAR)</td></tr>
+                    <tr><td>위치 : 서울 마포구 동교로38길 27</td></tr>
+                    <tr><td>평점 : ⭐⭐⭐⭐</td></tr>
+                    <tr><td>이유 : 사장님이 친절하시다.</td></tr>
+                    <tr><td>좋은 점: 사장님이 나보고 귀엽다고 해주심..</td></tr>
+                    <tr><td>아쉬운 점: 이승창 이걸 진심으로 받아들임</td></tr>
+                </tbody>
+            </table>
+        </div>
+</body>
+</html>

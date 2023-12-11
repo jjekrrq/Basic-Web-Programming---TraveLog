@@ -1,0 +1,189 @@
+<!-- 1. HTML 관련
+
+최소 5 페이지 이상의 웹 페이지를 작성합니다. o 
+메타 태그를 활용하여 웹 페이지의 기본 정보를 포함해야 합니다. o 
+하이퍼링크를 이용하여 모든 웹 페이지에 접근할 수 있어야 합니다. o
+테이블을 활용하는 부분이 포함되어야 합니다. o
+미디어를 활용하는 부분이 포함되어야 합니다. o
+웹 폼을 활용하는 부분이 포함되어야 합니다. o
+ 
+
+2. CSS 관련
+
+스타일 시트를 적용하여 작성된 웹 페이지가 포함되어야 합니다. o 
+웹 페이지에서 셀렉터를 활용하는 부분이 포함되어야 합니다. o
+position으로 태그 위치를 정하는 부분이 포함되어야 합니다. o
+폼 요소에 스타일 시트가 적용된 부분이 포함되어야 합니다. o
+ 
+
+3. Javascript 관련
+
+자바스크립트 코드를 활용해 웹페이지를 제어하는 부분이 포함되어야 합니다. o
+이벤트 리스너 속성으로 이벤트를 활용하는 부분이 포함되어야 합니다. o 
+DOM 객체를 제어하는 부분이 포함되어야 합니다. o
+--> 
+
+<!--갔던 장소나 지역을 테이블로 구성하여 하이퍼링크를 통해 그 곳을 소개하고 다시 가고싶은가?를 라디오박스로 구현-->
+<!--버튼을 하나 만들어서 홈버튼 즉, 메인 페이지로 항해하는 버튼 만들자(JS이벤트 리스너 활용)-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="travel" content="introduce, initial-scale=1.0">
+        <title>TraveLog</title>
+        <style>
+            @import url(../homepage/css/mainStyle.css);  /*r기본 배경 스타일 시트 불러오기.*/
+            
+            #cellphone{
+                display: inline-block;
+                border-radius: 10px;   
+                width: 500px;
+                height: 700px;
+                border: 5px solid #EEEEEE;  
+                text-align: center;
+                margin-left: 25%;
+                padding-bottom: 100px;
+            }
+            #btn1{
+                border-radius: 50%;
+                position: relative;
+                left: -5px;
+                bottom: -5px;
+                padding: 20px;
+            }
+            #forCenter{
+                display: inline-block;
+                position: relative;
+                top: 10px;
+            }
+            #place{
+                display: inline-block;
+                position: relative;
+                bottom: 12px;
+                background-color: #EEEEEE;
+                border-radius: 5px;
+            }
+            #introduce{
+                display: inline-block;
+                position: relative;
+                left: 10px;
+                top: -434px;
+                border: 5px solid #EEEEEE;
+                border-radius: 10px;   
+                width: 450px;
+                height: 700px;
+                margin-left: 30px;
+                padding-bottom: 100px;
+            }
+            #style_h4{
+                display: inline-block;
+                background-color: #EEEEEE;
+                border-radius: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            #selfie{
+                display: inline-block;
+                position: relative;
+                top: 2px;
+                left: 119px;
+            }
+            #table1{
+                border-collapse: separate;
+                border-spacing: 0 10px;
+                width: 80%;
+            }
+            #table1>td{
+                width: 100px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <!--페이지 기본 정보를 헤더에 담음-->
+        <header>
+            <h3><span id="forCenter">TraveLog</span></h3>
+            <hr>
+        </header>
+        
+        <!--페이지 주요 내용-->
+        <div id="introduce">
+            <section>
+                <h4 style="text-align: center;"><span id="style_h4">자기소개</span></h4>
+                <hr>
+                <img src="../homepage/media/yeonnam.webp" width="200" height="200" id="selfie">
+                <hr>
+                <table id="table1">
+                    <tbody>
+                        <tr id="t1">
+                            <td>이름 : 이승창</td>
+                        </tr>
+                        <tr id="t2"><td>나이 : 22</td></tr>
+                        <tr id="t3"><td>전공 : IT융합자율학부</td></tr>
+                        <tr id="t4"><td>MBTI : ENTP</td></tr>
+                        <tr id="t5"><td>취미 : 운동, 산책</td></tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <div id="cellphone">
+            <section>
+                <table>
+                    <caption style="color: #393E46;"><strong id="place">이승창의 여행 기록</strong></caption>
+                    <thead>
+                        <tr>
+                            <th>Location</th>
+                            <th>Date</th>
+                            <th>Transportation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="../homepage/link/gangwondo.html" target="_self">횡성</a></td>
+                            <td>2022.09.15.</td>
+                            <td>같이 간 형의 차</td>
+                        </tr>
+                        <tr>
+                            <td><a href="../homepage/link/cheonan.html" target="_self">천안</a></td>
+                            <td>2023.04.04.</td>
+                            <td>무궁화호</td>
+                        </tr>
+                        <tr>
+                            <td><a href="../homepage/link/yeonnamdong.html" target="_self">연남동</a></td>
+                            <td>2023.05.18.</td>
+                            <td>지하철</td> 
+                        </tr>
+                        <tr>
+                            <td><a href="../homepage/link/osaka.html" target="_self">오사카</a></td>
+                            <td>2023.06.14.</td>
+                            <td>비행기</td>
+                        </tr>
+                        <tr>
+                            <td><a href="../homepage/link/Itaewon.html" target="_self">이태원</a></td>
+                            <td>2023.06.24.</td>
+                            <td>지하철</td>
+                        </tr>
+                        <tr>
+                            <td><a href="../homepage/link/gangreung.html" target="_self">강릉</a></td>
+                            <td>2023.08.05.</td>
+                            <td>렌트카</td>
+                        </tr>
+                        <tr>
+                            <td><a href="../homepage/link/hangang.html" target="_self">한강</a></td>
+                            <td>2023.09.23.</td>
+                            <td>지하철</td>
+                        </tr>
+                        <tr>
+                            <td><a href="../homepage/link/hannam.html" target="_self">한남동</a></td>
+                            <td>2023.10.28.</td>
+                            <td>지하철</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form>
+                    <input id="btn1" type="button" onclick="alert('메인 페이지입니다.')">
+                </form>
+            </section>
+        </div>
+    </body>
+</html>

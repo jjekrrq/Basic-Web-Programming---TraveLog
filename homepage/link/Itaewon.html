@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="travel" content="이태원, initial-scale=1.0">
+    <title>이태원</title>
+    <style>
+        @import url(../css/phoneBaseStyle.css);
+    </style>
+</head>
+<body>
+    <h3><span id="h3center">이태원</span></h3>
+        <div id="box1">
+            <table>
+                <caption><strong id="tablecaption"></strong></caption>
+                <tbody>
+                    <tr>
+                        <td><img src="../media/Itaewon.jpg" width="430px" height="450px" id="imgplace"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr id="phonehinge">
+            <form>
+                <input id="btn1" type="button" name="home" onclick="goHome(this)"> <!--이벤트 리스너--> 
+            </form>
+            <div id="btn2" style="display: inline-block;" onclick="goNext()"></div>
+            <div id="btn3" style="display: inline-block;" onclick="goBefore()"></div>
+            <script>
+                function goHome(obj){
+                    alert("홈으로 갑니다.")
+                    window.location.href = "../main.html"
+                }
+                function goNext(){
+                    window.location.href = "../link/gangreung.html";
+                }
+                function goBefore(){
+                    window.location.href = "../link/osaka.html";
+                }
+            </script>
+        </div>
+        <div id="info">
+            <table id="info-table">
+                <tbody>
+                    <tr><td>이름 : 술탄 케밥</td></tr>
+                    <tr><td>위치 : 서울 용산구 보광로 126</td></tr>
+                    <tr><td>평점 : ⭐⭐⭐⭐⭐</td></tr>
+                    <tr><td>이유 : 이태원 자주 가는데 여기 맨날 감.</td></tr>
+                    <tr><td>아쉬운 점 : 없음. 감자튀김이 진짜임.</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="left_info">
+            <table id="info-table">
+                <tbody>
+                    <tr><td>이름 : 더뷰 이태원(BAR)</td></tr>
+                    <tr><td>위치 : 서울 용산구 이태원로16길 11 1층</td></tr>
+                    <tr><td>평점 : ⭐⭐⭐⭐</td></tr>
+                    <tr><td>이유 : 분위기가 좋음.</td></tr>
+                    <tr><td>아쉬운 점: 내가 술을 잘 못 마심.</td></tr>
+                </tbody>
+            </table>
+        </div>
+</body>
+</html>

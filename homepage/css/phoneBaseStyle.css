@@ -1,0 +1,149 @@
+body{  /*기본 배경 색*/
+    background-color: #EDF1D6;
+    font-family: EASTARJET-Medium;
+}
+@font-face {
+    font-family: 'EASTARJET-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/EASTARJET-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+h3{   /*제목*/
+    height: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: larger;
+    background-color: #9DC08B;
+}
+#h3center{ /*제목 중간 위치*/
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: -15px;
+}
+#box1{   /*휴대폰 테두리*/
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;   
+    width: 500px;
+    height: 700px;
+    border: 5px solid #40513B;  
+    text-align: center;
+    margin-left: 33%;
+    padding-bottom: 100px;
+    left: -30px;
+    top: 30px;
+}
+#tablecaption{   /*테이블 캡션 위치 조정*/
+    position: relative;
+    background-color: #40513B;
+    left: 30px;
+    top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+}
+tbody{  /*이미지 위치 조정 CSS*/
+    position: relative;
+    left: 32.4px;
+    top: 50px;
+}
+#phonehinge{   /*휴대폰 모양의 힌지 부분*/
+    /* display: inline-block; */
+    position: relative;
+    top: 73px;
+    border: 5px solid #40513B;
+}
+#btn1{   /*버튼 위치 조정과 버튼의 모양*/
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    top: 160px;
+    width: 60px;
+    height: 60px;
+    background-color: #40513B;
+    left: 0px;
+    cursor: pointer;
+}
+#btn2{
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 50px solid #40513B;
+    border-right: 50px solid transparent;
+    position: relative;
+    top: 97px;
+    right: -212px;
+    cursor: pointer;
+}
+#btn3{
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 50px solid #40513B;
+    border-right: 50px solid transparent;
+    position: relative;
+    top: 97px;
+    left: -210px;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+#btn3:hover{
+    box-shadow: 0px 0px ;
+}
+#video{
+    display: none;
+    position: relative;
+    bottom: 750px;
+}
+#play-video-btn{
+    position: relative;
+    right: 850px;
+    font-family: EASTARJET-Medium;
+    background-color: #9DC08B; 
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#info{
+    display: inline-block;
+    position: relative;
+    left: 930px;
+    top: -780px;
+    border: 5px solid #40513B;
+    border-radius: 10px;   
+    width: 400px;
+    height: 400px;
+    margin-left: 30px;
+    padding-bottom: 0px;
+}
+#info-table{
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    width: 80%;
+}
+#info-table>td{
+    width: 100px;
+}
+td{
+    border-bottom: 1px solid #40513B;
+    height: 30px;
+}
+#left_info{
+    display: inline-block;
+    position: relative;
+    left: -467px;
+    top: -780px;
+    border: 5px solid #40513B;
+    border-radius: 10px;   
+    width: 400px;
+    height: 400px;
+    margin-left: 30px;
+    padding-bottom: 0px;
+}

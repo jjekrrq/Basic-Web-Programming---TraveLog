@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="travel" content="강릉, initial-scale=1.0">
+    <title>강릉</title>
+    <style>
+        @import url(../css/phoneBaseStyle.css);
+    </style>
+</head>
+<body>
+    <h3><span id="h3center">강릉</span></h3>
+        <div id="box1">
+            <table>
+                <caption><strong id="tablecaption"></strong></caption>
+                <tbody>
+                    <tr>
+                        <td><img src="../media/gangreung.jpg" width="430px" height="450px" id="imgplace"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr id="phonehinge">
+            <form>
+                <input id="btn1" type="button" name="home" onclick="goHome(this)">
+            </form>
+            <div id="btn2" style="display: inline-block;" onclick="goNext()"></div>
+            <div id="btn3" style="display: inline-block;" onclick="goBefore()"></div>
+            <script>
+                function goHome(obj){
+                    alert("홈으로 갑니다.")
+                    window.location.href = "../main.html"
+                }
+                function goNext(){
+                    window.location.href = "../link/hangang.html";
+                }
+                function goBefore(){
+                    window.location.href = "../link/Itaewon.html";
+                }
+            </script>
+        </div>
+        <button id="play-video-btn">영상보기</button>
+        <video id="video" width="400" height="400" controls>
+            <source src="../video/gangreung.mp4" type="video/mp4">
+        </video>
+        <div id="info">
+            <table id="info-table">
+                <tbody>
+                    <tr><td>숙소 이름 : 주문진 해수욕장</td></tr>
+                    <tr><td>위치 : 강원 강릉시 주문진읍 주문북로 210</td></tr>
+                    <tr><td>평점 : ⭐⭐⭐⭐</td></tr>
+                    <tr><td>이유 : BTS 정류장에서 사진 찍을 수 있음.</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <script>
+            // 버튼 클릭 시 영상 토글
+            document.getElementById('play-video-btn').addEventListener('click', function() {
+            var video = document.getElementById('video');
+            video.volume = 0.2; // 초기 볼륨 설정(0은 무음, 1이 최대 볼륨)
+            
+            // 영상이 숨겨져 있다면 보이도록 변경하고 재생
+            if (video.style.display === 'none') {
+                video.style.display = 'block';
+                video.play(); // 영상 재생
+            } 
+            else {
+                video.style.display = 'none'; // 영상 숨김
+                video.pause(); // 영상 정지
+            }
+            });
+        </script>
+</body>
+</html>

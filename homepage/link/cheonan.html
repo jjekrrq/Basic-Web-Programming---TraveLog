@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="travel" content="천안, initial-scale=1.0">
+    <title>천안</title>
+    <style>
+        @import url(../css/phoneBaseStyle.css);
+    </style>
+</head>
+<body>
+    <h3><span id="h3center">천안</span></h3>
+        <div id="box1">
+            <table>
+                <caption><strong id="tablecaption"></strong></caption>
+                <tbody>
+                    <tr>
+                        <td><img src="../media/cheonan.jpg" width="430px" height="450px" id="imgplace"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr id="phonehinge">
+            <form>
+                <input id="btn1" type="button" name="home" onclick="goHome(this)">
+            </form>
+            <div id="btn2" style="display: inline-block;" onclick="goNext()"></div>
+            <div id="btn3" style="display: inline-block;" onclick="goBefore()"></div>
+        </div>
+        <div id="info">
+            <table id="info-table">
+                <tbody>
+                    <tr><td>이름 : 독립기념관</td></tr>
+                    <tr><td>위치 : 충남 천안시 동남구 목천읍 독립기념관로 1 독립기념관</td></tr>
+                    <tr><td>평점 : ⭐⭐⭐⭐⭐</td></tr>
+                    <tr><td>이유 : 한국인이면 꼭 가봤으면 좋겠다.</td></tr>
+                    <tr><td>아쉬운 점: 위치가 천안역에서 좀 멀다.</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="left_info">
+            <table id="info-table">
+                <tbody>
+                    <tr><td>이름 : 마약만두 앤 칼국수</td></tr>
+                    <tr><td>위치 : 충남 천안시 동남구 대흥로 243-2</td></tr>
+                    <tr><td>평점 : ⭐⭐⭐⭐</td></tr>
+                    <tr><td>좋은 점: 가성비가 좋다</td></tr>
+                    <tr><td>아쉬운 점: 맛은 그냥저냥 먹을만 하다.</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <script>
+            function goHome(obj){
+                alert("홈으로 갑니다.")
+                window.location.href = "../main.html"
+            }
+            function goNext(){
+                window.location.href = "../link/yeonnamdong.html";
+            }
+            function goBefore(){
+                window.location.href = "../link/gangwondo.html";
+            }
+        </script>
+</body>
+</html>

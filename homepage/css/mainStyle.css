@@ -1,0 +1,50 @@
+hr{
+    border : 10px solid #00ADB5;
+    border-radius: 10px;
+}
+
+body{
+    background-color: #222831;
+    font-family: EASTARJET-Medium;
+}
+@font-face {
+    font-family: 'EASTARJET-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/EASTARJET-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+table{
+    border: 1px solid gainsboro;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 4px;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+td, th{
+    border: 1px solid #EEEEEE;
+    padding-right: 3em;
+    height: 4em;
+    text-align: center;
+    background-color: #EEEEEE;
+    border-bottom: 1px solid #222831;
+    
+}
+h3{
+    background-color: #F6FDC3;
+    height: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: larger;
+}
+a{
+    text-decoration: underline;
+    color: black;
+
+}
